@@ -14,31 +14,33 @@ div button{
     display: inline;
 }
 
+/* For Mobile */
 
 @media only screen and (max-width: 450px) {
     body {
-        /* background-color: lightblue; */
+        background-color: lightblue;
          /* background-color: var(--bs-secondary); */
     }
-    #foot_2{
-        /* position: absolute; */
-        /* display: flex;
-        justify-content: center;
-        align-content: center; */
-       
-        position: relative;
-        bottom : -500px;
-        right: -150px;  */
-        /* float: right;
+    #foot_1{       
+        position: absolute;
+        bottom : 100px;
+        margin-left: 80px;
+        width: 250px;
 
-            width:10%;
-            /* margin-left:25%; */
-            /* margin-right:25%; */
-            /* margin: auto; */
+    }
+    #button-addon2_2{
+                position: absolute;
+                bottom : 50px;
+                margin-left: 160px;
+                width:100px;
+    }
+    h2{
+        text-align: center;
     }
 }
 
 
+/* Except Mobile */
 @media only screen and (min-width: 450px) {
     body {
         background-color: lightcoral;

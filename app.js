@@ -7,12 +7,14 @@ press = (a) => {
         var inputValues = document.getElementById("inputValue").value;
         var list = document.getElementById("list");
         var li = document.createElement("li");
+        li.setAttribute("class", "display-4")
         var t = document.createTextNode(inputValues);
         li.appendChild(t);
 
         var delBtn = document.createElement("button");
         var delText = document.createTextNode("Delete");
         delBtn.setAttribute("class", "btn");
+        delBtn.setAttribute("class", "btn btn-outline-secondary");
         delBtn.setAttribute("onclick", "deleteItem(this)");
         delBtn.appendChild(delText);
         li.appendChild(delBtn);
@@ -23,6 +25,7 @@ press = (a) => {
         editBtn.appendChild(editText);
         li.appendChild(editBtn);
         editBtn.setAttribute("class", "btn");
+        editBtn.setAttribute("class", "btn btn-outline-secondary");
         editBtn.setAttribute("onclick", "editIt(this)");
 
 
