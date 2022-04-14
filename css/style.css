@@ -3,7 +3,9 @@ h2 {
 }
 /* For Mobile */
 
-@media only screen and (max-width: 450px) {
+/* and (min-width: 350px) */
+
+@media only screen  and (max-device-width: 700px) {
     body {
         background-color: lightblue;
          /* background-color: var(--bs-secondary); */
@@ -28,7 +30,7 @@ h2 {
 
 
 /* Except Mobile */
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 1450px) {
     body {
         background-color: lightcoral;
     }
