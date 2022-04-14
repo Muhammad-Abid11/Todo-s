@@ -5,7 +5,7 @@ h2 {
 
 /* and (min-width: 350px) */
 
-@media only screen  and (max-device-width: 736px) {
+@media only screen  and (max-device-width: 450px) {
     body {
         background-color: lightblue;
          /* background-color: var(--bs-secondary); */
@@ -32,7 +32,7 @@ h2 {
 
 
 /* Except Mobile */
-@media only screen and (min-width: 746px) {
+@media screen and (min-width: 450px) {
     body {
         background-color: lightcoral;
     }
@@ -46,7 +46,7 @@ h2 {
     #button-addon2_2{
                     position: absolute;
                     margin-top: 20px;
-                    margin-left: 59%;
+                    margin-left: 45%;
                     width: 150px;
      }
     #list{
