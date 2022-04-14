@@ -7,27 +7,27 @@ press = (a) => {
         var inputValues = document.getElementById("inputValue").value;
         var list = document.getElementById("list");
         var li = document.createElement("li");
-        li.setAttribute("class", "display-4")
+        li.setAttribute("class", "display-4")   //for bootstrap property
         var t = document.createTextNode(inputValues);
         li.appendChild(t);
 
         var delBtn = document.createElement("button");
         var delText = document.createTextNode("Delete");
         delBtn.setAttribute("class", "btn");
-        delBtn.setAttribute("class", "btn btn-outline-secondary");
+        delBtn.setAttribute("class", "btn btn-outline-secondary");//for bootstrap property
         delBtn.setAttribute("onclick", "deleteItem(this)");
         delBtn.appendChild(delText);
         li.appendChild(delBtn);
-        list.appendChild(li);
 
         var editBtn = document.createElement("button");
         var editText = document.createTextNode("Edit");
+        editBtn.setAttribute("class", "btn");
+        editBtn.setAttribute("class", "btn btn-outline-secondary");//for bootstrap property
+        editBtn.setAttribute("onclick", "editIt(this)");
         editBtn.appendChild(editText);
         li.appendChild(editBtn);
-        editBtn.setAttribute("class", "btn");
-        editBtn.setAttribute("class", "btn btn-outline-secondary");
-        editBtn.setAttribute("onclick", "editIt(this)");
 
+        list.appendChild(li);
 
 
         document.getElementById("inputValue").value = "";
