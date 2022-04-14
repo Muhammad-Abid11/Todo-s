@@ -5,7 +5,7 @@ h2 {
 
 /* and (min-width: 350px) */
 
-@media only screen  and (max-device-width: 700px) {
+@media only screen  and (max-device-width: 736px) {
     body {
         background-color: lightblue;
          /* background-color: var(--bs-secondary); */
@@ -13,24 +13,27 @@ h2 {
     #foot_1{       
         position: absolute;
         bottom : 100px;
-        margin-left: 80px;
+        margin-left: 25%;
         width: 250px;
 
     }
     #button-addon2_2{
                 position: absolute;
                 bottom : 50px;
-                margin-left: 160px;
+                margin-left: 35%;
                 width:100px;
     }
-    h2{
-        text-align: center;
+    #list {
+        position: absolute;
+        /* align-content: center; */
+        list-style: none;
+        margin-left: 25%;
     }
 }
 
 
 /* Except Mobile */
-@media only screen and (min-width: 1450px) {
+@media only screen and (min-width: 746px) {
     body {
         background-color: lightcoral;
     }
